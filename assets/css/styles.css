@@ -173,7 +173,7 @@ body.dark-theme {
 .section__title {
   position: relative;
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-2);
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
@@ -189,6 +189,13 @@ body.dark-theme {
   width: 67px;
   height: 1px;
   background-color: var(--first-color);
+}
+
+.section__description {
+  position: relative;
+  margin-bottom: var(--mb-3);
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -390,7 +397,8 @@ body.dark-theme {
 }
 
 .button--small {
-  padding: 1rem 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.5rem;
 }
 
 /*=============== FEATURED ===============*/
@@ -426,8 +434,7 @@ body.dark-theme {
   margin-bottom: var(--mb-1);
 }
 
-.featured__title, 
-.featured__price {
+.featured__title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-bold);
 }
@@ -438,9 +445,11 @@ body.dark-theme {
 }
 
 .featured__price {
+  font-size: var(--h4-font-size);
   display: block;
   color: var(--first-color);
   transition: .3s;
+  margin-top: 0.7rem;
 }
 
 .featured__button {
@@ -460,6 +469,8 @@ body.dark-theme {
 }
 
 .featured__card:hover .featured__price {
+  transform: translateY(0);
+  opacity: 1;
   margin-bottom: var(--mb-1-5);
 }
 
@@ -1018,7 +1029,7 @@ body.dark-theme {
 
 @media screen and (min-width: 767px) {
   .section {
-    padding: 8rem 0 1rem;
+    padding: 6rem 0 1rem;
   }
 
   .cart {
