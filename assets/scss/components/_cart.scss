@@ -1,5 +1,5 @@
-/*=============== CART ===============*/
-.cart{
+/*=============== sessions ===============*/
+.sessions{
     position: fixed;
     background-color: var(--body-color);
     z-index: var(--z-fixed);
@@ -96,7 +96,7 @@
     }
 }
 
-/* Show cart */
-.show-cart{
+/* Show sessions */
+.show-sessions{
     right: 0;
 }

@@ -97,24 +97,24 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SHOW CART ===============*/
-const cart = document.getElementById('cart'),
-      cartShop = document.getElementById('cart-shop'),
-      cartClose = document.getElementById('cart-close')
+/*=============== SHOW sessions ===============*/
+const sessions = document.getElementById('sessions'),
+      sessionsShop = document.getElementById('sessions-shop'),
+      sessionsClose = document.getElementById('sessions-close')
 
-/*===== CART SHOW =====*/
+/*===== sessions SHOW =====*/
 /* Validate if constant exists */
-if(cartShop){
-    cartShop.addEventListener('click', () =>{
-        cart.classList.add('show-cart')
+if(sessionsShop){
+    sessionsShop.addEventListener('click', () =>{
+        sessions.classList.add('show-sessions')
     })
 }
 
-/*===== CART HIDDEN =====*/
+/*===== sessions HIDDEN =====*/
 /* Validate if constant exists */
-if(cartClose){
-    cartClose.addEventListener('click', () =>{
-        cart.classList.remove('show-cart')
+if(sessionsClose){
+    sessionsClose.addEventListener('click', () =>{
+        sessions.classList.remove('show-sessions')
     })
 }
 
