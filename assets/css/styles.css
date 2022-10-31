@@ -488,6 +488,10 @@ body.dark-theme {
 .story__description {
   margin-bottom: var(--mb-2-5);
 }
+#more {
+  display: none;
+}
+
 
 .story__images {
   position: relative;
@@ -952,7 +956,7 @@ body.dark-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20rem;
+    margin-top: 21rem;
 }
 
 .sessions__amount-trash {
