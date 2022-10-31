@@ -97,24 +97,24 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SHOW CART ===============*/
-const cart = document.getElementById('cart'),
-      cartShop = document.getElementById('cart-shop'),
-      cartClose = document.getElementById('cart-close')
+/*=============== SHOW sessions ===============*/
+const sessions = document.getElementById('sessions'),
+      sessionsShop = document.getElementById('sessions-shop'),
+      sessionsClose = document.getElementById('sessions-close')
 
-/*===== CART SHOW =====*/
+/*===== sessions SHOW =====*/
 /* Validate if constant exists */
-if(cartShop){
-    cartShop.addEventListener('click', () =>{
-        cart.classList.add('show-cart')
+if(sessionsShop){
+    sessionsShop.addEventListener('click', () =>{
+        sessions.classList.add('show-sessions')
     })
 }
 
-/*===== CART HIDDEN =====*/
+/*===== sessions HIDDEN =====*/
 /* Validate if constant exists */
-if(cartClose){
-    cartClose.addEventListener('click', () =>{
-        cart.classList.remove('show-cart')
+if(sessionsClose){
+    sessionsClose.addEventListener('click', () =>{
+        sessions.classList.remove('show-sessions')
     })
 }
 
@@ -137,7 +137,21 @@ if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
 }
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
 
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
