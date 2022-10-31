@@ -547,6 +547,8 @@ body.dark-theme {
 .products__button {
   background-color: var(--button-color);
   padding: .4rem;
+  padding-left: 0.7rem;
+  padding-right: 0;
   color: #fff;
   font-size: 1rem;
   position: absolute;
